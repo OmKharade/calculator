@@ -5,24 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&display=swap');
+      </style>
 </head>
 <body>
-    <button class="digit" >1</button>
-    <button class="digit">2</button>
-    <button class="digit">3</button>
-    <button class="digit">4</button>
-    <button class="digit">5</button>
-    <button class="digit">6</button>
-    <button class="digit">7</button>
-    <button class="digit">8</button>
-    <button class="digit">9</button>
-    <button class="digit">0</button>
-    <button class="operator">+</button>
-    <button class="operator">-</button>
-    <button class="operator">*</button>
-    <button class="operator">/</button>
-    <button class="operator">x<sup>y</sup></button>
-    <button class="operator equals">=</button>
+    <div class="calculator">
+        <div class="screen-container">
+            <div class="screen screen-current"></div>
+            <div class="screen screen-operator"></div>
+            <div class="screen screen-past"></div>
+        </div>
+        <div class="button-container"></div>
+            <button class="delete all" id="ac">AC</button>
+            <button class="delete" id="del">DEL</button>
+            <button class="operator" id="power">x<sup>y</sup></button>
+            <button class="operator" id="divide">/</button>
+            <button class="digit">7</button>
+            <button class="digit">8</button>
+            <button class="digit">9</button>
+            <button class="operator">*</button>
+            <button class="digit">4</button>
+            <button class="digit">5</button>
+            <button class="digit">6</button>
+            <button class="operator">&minus;</button>
+            <button class="digit" >1</button>
+            <button class="digit">2</button>
+            <button class="digit">3</button>
+            <button class="operator">&plus;</button>
+            <button class="operator">&plus;/&minus;</button>
+            <button class="digit">0</button>
+            <button class="digit decimal">.</button>
+            <button class="operator equals">Enter</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
